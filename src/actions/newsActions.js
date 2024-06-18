@@ -37,7 +37,7 @@ export const fetchNews = ({ category, page }) => {
   return async (dispatch) => {
     dispatch(fetchNewsRequest());
     try {
-      const response = await axios.get(`https://newsapi.org/v2/everything?q=${category}&apiKey=a3e0a684ea114f759ea2942a12c1e775`, {
+      const response = await axios.get(`https://newsapi.org/v2/everything?q=${category}&apiKey=bb740887f1cd4fc7abd519329ea493b6`, {
         params: {
           page,
           pageSize: 10,
